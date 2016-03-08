@@ -1,0 +1,13 @@
+﻿<div class="list-group" style="margin-top: 10px;" infinite-scroll='nextPage()'
+      infinite-scroll-disabled='busy' infinite-scroll-distance='1'>
+    <div class="list-group-item" ng-repeat="item in items">
+        <h2 class="list-group-item-heading"><a target="_blank" href="{{item.Url}}">{{item.Title}}</a>
+        </h2>
+        <div class="list-group-item-text">{{item.Content}} ...</div>
+        <p>
+            Author: <b>{{item.Author}}</b> | Views: <b>{{item.ViewCount}}</b> | Source: <b>{{item.Site}}</b>
+        </p>
+    </div>
+
+
+</div>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "NairaStack";
+}
+
+
+<p style="margin: 10px" ng-show="items.length > 0">
+    <button class="btn btn-primary" ng-click="previousPage()">Previous</button> |
+    <button class="btn btn-primary" ng-click="nextPage()">Next</button>
+</p>
+
+
+<p ng-show='busy'>Loading data...</p>
+
+<h3 ng-hide="!noResult" class="text-danger">No result found for {{term}}</h3>
+
+<ng-include src="'/app/searchResult.html'"></ng-include>
