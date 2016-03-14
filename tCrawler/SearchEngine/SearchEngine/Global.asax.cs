@@ -15,7 +15,7 @@ namespace SearchEngine
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
 
-            var crawler = new WebCrawler();
+            var crawler = new WebCrawler(25);
             var timer = new Timer(10000);
             timer.Elapsed += (s, e) =>
             {
